@@ -1,0 +1,19 @@
+\begin{table}[!ht]
+\centering
+\caption{Repeated stratified 5-fold cross-validation (10 repeats) for three-class call-type classification.}
+\label{tab:p1clf}
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+Model & Accuracy & Balanced accuracy & Macro $F_1$ \\
+\midrule
+Logistic regression (reduced) & 0.393 $\pm$ 0.079 & 0.390 $\pm$ 0.086 & 0.369 $\pm$ 0.090 \\
+Random forest (reduced) & 0.542 $\pm$ 0.108 & 0.529 $\pm$ 0.106 & 0.517 $\pm$ 0.110 \\
+Random forest (full) & 0.934 $\pm$ 0.045 & 0.941 $\pm$ 0.040 & 0.942 $\pm$ 0.041 \\
+Extra trees (full) & 0.934 $\pm$ 0.043 & 0.941 $\pm$ 0.039 & 0.942 $\pm$ 0.039 \\
+Gradient boosting (full) & 0.927 $\pm$ 0.055 & 0.936 $\pm$ 0.048 & 0.936 $\pm$ 0.049 \\
+Hierarchical rule + RF & 0.797 $\pm$ 0.070 & 0.817 & 0.817 \\
+\bottomrule
+\end{tabular}
+\par\vspace{2pt}\footnotesize Mean $\pm$ standard deviation over 50 folds. ``Reduced'' uses only universally measured continuous features; ``full'' adds F02, pulse rate and indicators of whether these structural cues are measurable; the hierarchical rule assigns two-voice from the presence of F02 and then separates the other two types with a random forest.
+\end{table}

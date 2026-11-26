@@ -1,0 +1,24 @@
+\begin{table}[H]
+\centering
+\caption{Leading permutation importances for the full and reduced random-forest classifiers (decrease in balanced accuracy when a feature is permuted).}
+\label{tab:p1imp}
+\small
+\begin{tabular}{llr}
+\toprule
+Model & Feature & Permutation importance \\
+\midrule
+Full & second fundamental present & 0.313 \\
+Full & pulse train present & 0.232 \\
+Full & $F_{peak}/F_{01}$ & 0.016 \\
+Full & $F_{01}$ & 0.014 \\
+Full & $Q_{25}$ & 0.007 \\
+Full & $F_{peak}/Q_{50}$ & 0.007 \\
+Reduced & $Q_{50}/F_{01}$ & 0.054 \\
+Reduced & $F_{01}$ & 0.047 \\
+Reduced & $F_{peak}/F_{01}$ & 0.043 \\
+Reduced & Duration & 0.024 \\
+Reduced & $Q_{50}$ & 0.024 \\
+Reduced & $Q_{25}$ & 0.021 \\
+\bottomrule
+\end{tabular}
+\end{table}
